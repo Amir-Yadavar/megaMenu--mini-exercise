@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.conteiner {
+  height: 100vh;
+  background: url(../shutterstock-1709651905.webp) center no-repeat;
+  background-size: cover;
+}
+
+.conteiner > header > h1 {
+  line-height: 14vw;
+  text-align: center;
+  color: rgb(255 255 255 / 42%);
+  font-size: 4vw;
+}
+
+.conteiner > header > nav {
+  width: 100%;
+  height: 4vw;
+  background-color:#7c7c7c80;
+}
+
+.conteiner > header > nav > ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  line-height: 4vw;
+  height: 100%;
+}
+
+.conteiner > header > nav > ul > li {
+  width: 12%;
+  height: 100%;
+}
+
+.conteiner > header > nav > ul > li > a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: rgb(250, 248, 245);
+  font-size: 1.2vw;
+  transition: 0.8s;
+}
+
+.conteiner > header > nav > ul > li > a:hover {
+  background-color: rgb(250, 248, 245);
+  color: rgb(93, 90, 90);
+  border-bottom: 3px solid rgb(93, 90, 90);
+}
+
+.conteiner > header > nav > ul > li > ul {
+  position: absolute;
+  width: 85%;
+  background-color:#7c7c7c80;
+  color: rgb(250, 248, 245);
+  height: 26.9vw;
+  left: 7.5vw;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 5px;
+}
+
+
+.conteiner > header > nav > ul > li:nth-child(2):hover :last-child ,
+.conteiner > header > nav > ul > li:nth-child(4):hover :last-child{
+  opacity: 1;
+  visibility: visible;
+  border: none;
+}
+
+.conteiner > header > nav > ul > li:nth-child(2):hover>a,
+.conteiner > header > nav > ul > li:nth-child(4):hover>a{
+    border: none;
+}
+
+.submenu ,.submenu2{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .submenu>ul{
+    border: 1px solid black;
+} */
+
+.submenu>ul>li{
+    width: 15vw;
+    list-style-type: none;
+    color: rgb(250, 248, 245);
+    transition: .6s;
+    cursor: pointer;
+    height: 4.5vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.submenu>ul>li:hover{
+    background-color: rgba(182, 182, 182, 0.722);
+    color: rgb(250, 248, 245);
+    border-radius: 3px;
+}
+
+.submenu2>ul>li{
+    width: 20vw;
+    list-style-type: none;
+    color: rgb(250, 248, 245);
+    transition: .6s;
+    cursor: pointer;
+    height: 4.5vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.submenu2>ul>li:hover{
+    background-color: rgba(182, 182, 182, 0.722);
+    color: rgb(250, 248, 245);
+}
